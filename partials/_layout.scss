@@ -33,7 +33,7 @@ padding: 0 14px;
 
 .hero{
     color: $white-normal;
-    min-height: 80vh;
+    min-height: 50vh;
 
     display: flex;
     flex-direction: column;
@@ -86,9 +86,9 @@ padding: 0 14px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1080px){
     .hero{
-        min-height: 60vh;
+        min-height: 40vh;
 
         h1{
             font-size: 50px;
