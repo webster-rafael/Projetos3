@@ -100,11 +100,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-<<<<<<< HEAD
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(assets/Bg2.png);
-=======
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/BG.jpg");
->>>>>>> ae2878fc252bd6ba66786bd2a3e7cb526d685a1c
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/Bg2.png");
   left: 0;
   top: 0;
   width: 100%;
@@ -166,7 +162,7 @@ i {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    min-height: 20vh;
+    min-height: 60vh;
   }
   .hero h1 {
     font-size: 50px;
@@ -263,7 +259,6 @@ i {
   font-family: "Exo 2", Sans-serif;
   font-size: 3.5em;
   font-weight: 700;
-  letter-spacing: 1.6px;
 }
 .pullman-content p {
   color: #fff;
