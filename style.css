@@ -100,7 +100,11 @@ i {
   content: "";
   display: block;
   position: absolute;
+<<<<<<< HEAD
   background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(assets/Bg2.png);
+=======
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/BG.jpg");
+>>>>>>> ae2878fc252bd6ba66786bd2a3e7cb526d685a1c
   left: 0;
   top: 0;
   width: 100%;
