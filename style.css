@@ -124,7 +124,7 @@ i {
 }
 .hero h1 {
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 76px;
@@ -140,9 +140,9 @@ i {
 
 .button-contact {
   padding: 14px 28px;
-  color: #fff;
-  background-color: #d94140;
-  border: 0;
+  color: #232224;
+  background-color: #24bbd3;
+  border-radius: 4px;
   font-size: 18px;
   font-weight: 600;
   margin: 14px 0;
@@ -230,48 +230,59 @@ i {
     transform: scale(1.07);
   }
 }
-.pullman {
-  background-color: #06121e;
-  overflow: hidden;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 54px 14px;
+.main-pullman {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/BG.jpg");
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
 }
 
-.pullman-content h2 {
+.main-pullman h1 {
   color: #24bbd3;
   font-family: "Exo 2", Sans-serif;
-  font-size: 2.5em;
+  font-size: 2.9em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.6px;
-}
-.pullman-content h3 {
-  color: #24bbd3;
   display: flex;
-  padding: 0;
-  text-align: center;
-  justify-content: center;
-  margin-top: 3%;
-  font-family: "Exo 2", Sans-serif;
-  font-size: 3.5em;
-  font-weight: 700;
-}
-.pullman-content p {
-  color: #fff;
-  font-family: "Exo 2", Sans-serif;
-  font-size: 1.5em;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-.pullman-content img {
-  max-width: 100%;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/BG.jpg");
 }
 
+.pullman-content {
+  width: 100%;
+  height: 100%;
+  margin-top: -3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-img {
+  width: 100%;
+  height: 80%;
+  padding: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+  .pullman-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 40%;
+  }
+  .box-img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 1080px) {
   .about-content {
     flex-direction: column;
@@ -347,6 +358,66 @@ img {
 #item-2:checked ~ .cards #song-2 img,
 #item-3:checked ~ .cards #song-3 img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.info {
+  width: 90%;
+  height: 100%;
+  background-color: black;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.txt {
+  width: 45%;
+  height: 90%;
+  border: 1px solid red;
+}
+
+.txt h1 {
+  font-family: "Roboto", sans-serif;
+  color: #24bbd3;
+  font-size: 2.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service {
+  width: 90%;
+  height: 50em;
+  background-color: black;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service-h1 {
+  font-family: "Exo 2", sans-serif;
+  color: #24bbd3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 22%;
+  height: 50%;
+  border: 1px solid red;
 }
 
 body {
