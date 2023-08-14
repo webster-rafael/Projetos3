@@ -273,14 +273,14 @@ i {
 @media screen and (max-width: 1080px) {
   .pullman-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 90%;
-    height: 40%;
+    width: 100%;
+    height: 50%;
   }
   .box-img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -364,7 +364,7 @@ img {
   width: 90%;
   height: 100%;
   background-color: black;
-  border: 1px solid red;
+  background-image: url(./assets/Bg.jpg);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -374,7 +374,7 @@ img {
 .txt {
   width: 45%;
   height: 90%;
-  border: 1px solid red;
+  background-color: #06121e;
 }
 
 .txt h1 {
@@ -389,15 +389,29 @@ img {
 .txt p {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 2em;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media screen and (max-width: 1080px) {
+  .txt p {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .service {
   width: 90%;
-  height: 50em;
+  height: auto;
   background-color: black;
   border: 1px solid red;
   display: flex;
