@@ -360,6 +360,12 @@ img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
+@media screen and (max-width: 1080px) {
+  .whats {
+    width: 300px;
+    height: 300px;
+  }
+}
 .info {
   width: 90%;
   height: 100%;
@@ -398,6 +404,11 @@ img {
 }
 
 @media screen and (max-width: 1080px) {
+  .txt h1 {
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+  }
   .txt p {
     font-family: "Roboto", sans-serif;
     color: #fff;

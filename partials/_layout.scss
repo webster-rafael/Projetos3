@@ -239,11 +239,6 @@ padding: 0 14px;
         }
     }
    
-        
-
-
-
-
 @media screen and (max-width: 1080px){
     .about-content {
         flex-direction: column;
@@ -323,6 +318,13 @@ img{
 
 }
 
+@media screen and (max-width: 1080px){
+.whats{
+        width: 300px;
+        height: 300px;   
+    }
+}
+
 .info {
     width: 90%;
     height: 100%;
@@ -363,6 +365,12 @@ img{
 }
 
 @media screen and (max-width: 1080px){
+
+    .txt h1{
+        font-size: 20px;
+        display: flex;
+        text-align: center;
+    }
     .txt p {
         font-family: 'Roboto', sans-serif;
         color: $white-normal;
