@@ -79,6 +79,7 @@ padding: 0 14px;
 
 .button-contact:hover{
     animation: scaleButton 0.8s alternate infinite;
+    color: $white-normal;
 }
 @keyframes scaleButton {
     from{
@@ -169,7 +170,7 @@ padding: 0 14px;
 
 .button-sobre {
     padding: 8px 21px;
-    color: $white-normal; 
+    color: $black-normal; 
     background-color: #0CF2DF;
     border-radius: 7px;
     font-size:9px;
@@ -206,6 +207,7 @@ padding: 0 14px;
     background-repeat: no-repeat;
     background-position: 50% 0;
     opacity: 0.9;
+    
 }
 
 .main-pullman h2{
@@ -216,31 +218,82 @@ padding: 0 14px;
     margin-top: 15px;
     text-transform: uppercase;
     letter-spacing: 1.0px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 
+
+}  
+
+.main-pullman h3{
+    color: #ffffff;
+    font-family: "Exo 2", Sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+    display: flex;
+    justify-content: center;
+    
 
 }
 
-    .pullman-content{
-        width: 100%;
-        height: 100%;
-        margin-top: -3%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+.main-pullman span{
+    margin-left: 10px;
+}
+
+.pullman-content{
+    width: 100%;
+    height: 100%;
+    margin-top: -3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
         
         
         
     }
 
-    .box-img {
-        width: 100%;
-        height: 80%;
-        padding: 5%;
+.box-img {
+    width: 100%;
+    height: 80%;
+    padding: 5%;
        
     }
 
+    .box-img:hover{
+        animation: scaleButton 0.8s alternate infinite;
+    }
+
 @media screen and (max-width: 1080px){
+    .main-pullman h2{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .main-pullman h3{
+        font-size: 25px; 
+        color: #ffffff;
+        font-family: "Exo 2", Sans-serif;
+        font-weight: 600;
+        margin-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-pullman span{
+        margin-left: 7px;
+    }
+
+    .main-pullman {
+        height: 50%;
+    }
+
     .pullman-content {
         display: flex;
         flex-direction: row;
@@ -252,8 +305,8 @@ padding: 0 14px;
         
 
         .box-img {
-            width: 400px;
-            height: 300px;
+            width: 50%;
+            height: 60%;
             
             
            
@@ -305,7 +358,27 @@ padding: 0 14px;
 
 }
 
+.txt:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
 @media screen and (max-width: 1080px){
+
+    .info {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .txt {
+        width: 46%;
+        height: 90%;
+        background-color: #06121e;
+        }
+    
 
     .txt h1{
         font-size: 20px;

@@ -52,6 +52,9 @@ i{
 }
 
 .header-logo{
+    width: 20%;
+    height: 200px;
+    size: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,9 +62,9 @@ i{
 }
 
 .header-logo img{
-    border-radius: 100%;
-    width: 250px;
-    margin-top: 10%;
+width: 500px;
+height: 500px;
+    
 }
 
 @media screen and (max-width: 1080px){
@@ -78,7 +81,8 @@ i{
     }
 
     .header-logo img{
-        width: 160px;
+        width: 300px;
+        padding-left: 80%;
         margin-top: 46px;
     }
     

@@ -55,6 +55,9 @@ i {
 }
 
 .header-logo {
+  width: 20%;
+  height: 200px;
+  size: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,9 +65,8 @@ i {
 }
 
 .header-logo img {
-  border-radius: 100%;
-  width: 250px;
-  margin-top: 10%;
+  width: 500px;
+  height: 500px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -79,7 +81,8 @@ i {
     font-size: 24px;
   }
   .header-logo img {
-    width: 160px;
+    width: 300px;
+    padding-left: 80%;
     margin-top: 46px;
   }
   .header-button {
@@ -104,7 +107,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(0, 0, 0, 0)), url('./assets/Fundo1.Jpg');
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(0, 0, 0, 0)), url("./assets/Fundo1.Jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -155,6 +158,7 @@ i {
 
 .button-contact:hover {
   animation: scaleButton 0.8s alternate infinite;
+  color: #fff;
 }
 
 @keyframes scaleButton {
@@ -224,7 +228,7 @@ i {
 }
 .button-sobre {
   padding: 8px 21px;
-  color: #fff;
+  color: #232224;
   background-color: #0CF2DF;
   border-radius: 7px;
   font-size: 9px;
@@ -252,7 +256,7 @@ i {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url('./assets/fundo2.jpg');
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("assets/fundo2.jpg");
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -268,7 +272,24 @@ i {
   margin-top: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.main-pullman h3 {
+  color: #ffffff;
+  font-family: "Exo 2", Sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-pullman span {
+  margin-left: 10px;
 }
 
 .pullman-content {
@@ -286,7 +307,35 @@ i {
   padding: 5%;
 }
 
+.box-img:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
 @media screen and (max-width: 1080px) {
+  .main-pullman h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .main-pullman h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Exo 2", Sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .main-pullman span {
+    margin-left: 7px;
+  }
+  .main-pullman {
+    height: 50%;
+  }
   .pullman-content {
     display: flex;
     flex-direction: row;
@@ -295,8 +344,8 @@ i {
     height: 50%;
   }
   .box-img {
-    width: 400px;
-    height: 300px;
+    width: 50%;
+    height: 60%;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -307,7 +356,7 @@ i {
 .info {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/fundo3.jpg');
+  background-image: url("./assets/fundo3.jpg");
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -340,7 +389,24 @@ i {
   align-items: center;
 }
 
+.txt:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
 @media screen and (max-width: 1080px) {
+  .info {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .txt {
+    width: 46%;
+    height: 90%;
+    background-color: #06121e;
+  }
   .txt h1 {
     font-size: 20px;
     display: flex;
@@ -468,7 +534,7 @@ i {
   .slide-description p {
     display: none;
   }
-  .slide-nav-button { 
+  .slide-nav-button {
     margin-top: -20px;
     font-size: 28px;
   }
