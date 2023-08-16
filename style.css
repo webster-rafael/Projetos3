@@ -104,7 +104,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(0, 0, 0, 0)), url(./assets/Fundo1.Jpg);
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(0, 0, 0, 0)), url('./assets/Fundo1.Jpg');
   left: 0;
   top: 0;
   width: 100%;
@@ -252,7 +252,7 @@ i {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("assets/fundo2.jpg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url('./assets/fundo2.jpg');
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -307,7 +307,7 @@ i {
 .info {
   width: 100%;
   height: 100%;
-  background-image: url("./assets/fundo3.jpg");
+  background-image: url('./assets/fundo3.jpg');
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -468,7 +468,7 @@ i {
   .slide-description p {
     display: none;
   }
-  .slide-nav-button {
+  .slide-nav-button { 
     margin-top: -20px;
     font-size: 28px;
   }
