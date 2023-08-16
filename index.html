@@ -131,32 +131,76 @@
         </div>
 
     </section>
-    <div class="whats-bg conteiner">
-        <div class="whats conteiner">
-            <input type="radio" name="slider" id="item-1" checked>
-            <input type="radio" name="slider" id="item-2">
-            <input type="radio" name="slider" id="item-3">
-                <div class="cards">
-                    <label class="card" for="item-1" id="song-1">
-                        <img src="assets/Gestão2.jpg" alt="Imagens de Ads Working">
-                    </label>
-                    <label class="card" for="item-2" id="song-2">
-                        <img src="assets/Gestao3.jpg" alt="Imagens de Ads Working">
-                    </label>
-                    <label class="card" for="item-3" id="song-3">
-                        <img src="assets/Gestao4.jpg" alt="Imagens de Ads Working">
-                    </label>
+    <div class="wrapper">
+        <div class="slide-wrapper" data-slide="wrapper">
+            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+            <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+            <div class="slide-list" data-slide="list">
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/Gestão1.jpg" alt="Assassin's Creed" />
+                        <div class="slide-description">
+                            <h3>Assassin's Creed</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="slide-item" data-slide="item" data-index="1">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/Gestão2.jpg" alt="Fortnite" />
+                        <div class="slide-description">
+                            <h3>Fortnite</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="2">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/Gestao3.jpg" alt="Freefire" />
+                        <div class="slide-description">
+                            <h3>Freefire</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="3">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/Gestao4.jpg" alt="GTA V" />
+                        <div class="slide-description">
+                            <h3>GTA V</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="4">
+                    <div class="slide-content">
+                        <img class="slide-image" src="./assets/Grafico1.jpg" alt="Halo 5" />
+                        <div class="slide-description">
+                            <h3>Halo 5</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="slide-controls" data-slide="controls-wrapper">
+            </div>
         </div>
     </div>
+    <script src="./slides.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 2000
+        })
+    </script>
+</div>
 
-    </section>
 
-        <div class="service-h1">
-            <h1>Serviços</h1>
 
-        </div>
-
+<div class="service-h1">
+    <h1>Serviços</h1>
+</div>
     <div class="service conteiner">
         <div class="box" id="foto-1">
             <img src="" alt="">
@@ -171,6 +215,6 @@
             <img src="" alt="">
         </div>
     </div>
-        
-    </body>
+    
+</body>
     </html>
