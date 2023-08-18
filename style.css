@@ -366,13 +366,24 @@ i {
 .txt {
   width: 35%;
   height: 90%;
-  background-color: #06121e;
+  background-color: #000;
 }
 
 .txt h1 {
   font-family: "Roboto", sans-serif;
   color: #0CF2DF;
-  font-size: 2.3em;
+  font-size: 30px;
+  padding-top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#txt-2 h1 {
+  font-family: "Roboto", sans-serif;
+  color: #0CF2DF;
+  font-size: 24px;
+  padding-top: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -566,7 +577,8 @@ i {
 
 .card {
   padding: 3px 26px 0 26px;
-  width: 20%;
+  width: 30%;
+  height: auto;
   margin-top: 5%;
   background-color: #000;
   border: 1px solid #0CF2DF;
@@ -596,6 +608,7 @@ i {
 
 @media screen and (max-width: 1080px) {
   .card {
+    width: 30%;
     height: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -605,14 +618,16 @@ i {
     font-size: 10px;
     display: flex;
     justify-content: center;
-    text-align: center;
-    padding: auto;
-    margin: auto;
+    align-items: center;
   }
   .card p {
-    font-size: 10px;
+    font-size: 13px;
     height: 70%;
-    padding: 0 2px 0 2px;
+    padding: 0 5px 0 5px;
+  }
+  .card img {
+    display: block;
+    margin: auto;
   }
 }
 body {
