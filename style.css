@@ -569,6 +569,7 @@ i {
   width: 20%;
   margin-top: 5%;
   background-color: #000;
+  border: 1px solid #0CF2DF;
 }
 
 .card strong {
